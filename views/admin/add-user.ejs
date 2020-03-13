@@ -1,0 +1,42 @@
+<% var title = 'Create User' %>
+<% include ../head %>
+<div id="crumbs"><a href="/admin">admin</a> > add user</div>
+<form method="POST" action="add-user" onsubmit="return validate()">
+    <table>
+        <tr>
+            <td><label for="companyId">CompanyID</label></td>
+            <td><select id="companyId" autofocus name="companyId" class="required"></select>
+                <script>bindList('/list-companies', document.getElementById('companyId'))</script>
+            </td>
+        </tr>
+        <tr>
+            <td> <label for="userName">User Name</label></td>
+            <td><input id="userName" type="text" name="userName" class="required"></td>
+        </tr>
+        <tr>
+            <td><label for="password">Password</label></td>
+            <td><input id="password" type="password" name="password" class="required"></td>
+        </tr>
+        <tr>
+            <td><label for="firstName">First Name</label></td>
+            <td><input id="firstName" type="text" name="firstName" class="required"></td>
+        </tr>
+        <tr>
+            <td><label for="lastName">Last Name</label></td>
+            <td><input id="lastName" type="text" name="lastName" class="required"></td>
+        </tr>
+        <tr>
+            <td><label for="enabled">Enabled</label></td>
+            <td><input id="enabled" type="checkbox" checked name="enabled"></td>
+        </tr>
+        <tr>
+            <td><label for="admin">Admin</label></td>
+            <td><input id="admin" type="checkbox" name="admin"></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><input type="submit" value="Submit"></td>
+        </tr>
+    </table>
+</form>
+<% include ../foot %>

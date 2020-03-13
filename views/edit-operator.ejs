@@ -1,0 +1,17 @@
+<% var title = 'Edit Operator' %>
+<% include head %>
+<div id="crumbs"><a href="/">home</a> > edit operator</div>
+<form method="POST" action="edit-operator" onsubmit="return validate()">
+    <input type="hidden" name="operatorId" value="<%= OperatorID %>"/>
+    <table>
+        <tr>
+            <td><label for="operator">Operator</label></td>
+            <td><input id="operator" type="text" name="name" autofocus class="required" value="<%= Name %>"></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><input type="submit" value="Update Operator"></td>
+        </tr>
+    </table>
+</form>
+<% include foot %>

@@ -1,0 +1,16 @@
+<% var title = 'Add Operator' %>
+<% include head %>
+<div id="crumbs"><a href="/">home</a> > add operator</div>
+<form method="POST" action="add-operator" onsubmit="return validate()">
+    <table>
+        <tr>
+            <td> <label for="operator">Operator Name</label></td>
+            <td><input id="operator" type="text" name="operator" class="required"></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><input type="submit" value="Add Operator"></td>
+        </tr>
+    </table>
+</form>
+<% include foot %>

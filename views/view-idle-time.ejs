@@ -1,0 +1,10 @@
+<% var title = 'Users' %>
+<% include head %>
+<div id="crumbs"><a href="/">home</a> > <a href="view-lasers">view lasers</a> > view laser status</div>
+<div id="table_div">
+</div>
+<script>
+    let url = `/table-idle-time`;
+    bindTable(url)
+</script>
+<% include foot %>

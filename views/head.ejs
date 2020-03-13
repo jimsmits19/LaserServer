@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LaserManager</title>
+    <style>
+      body {
+        padding: 50px;
+        font: 13px Helvetica, Arial, sans-serif;
+      }
+      .error {
+          color: red
+      }
+      .success {
+          color: green;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  </head>
+  <body>
+      <script type="text/javascript" src="/javascripts/site.js"></script>
+      <div id="error" class="error"></div>
+      <div id="message" class="success"></div>
+      <div id="userinfo"></div>
+      <div id="header">
+        <script type="text/javascript">getUserInfo()</script>
+        <h1><a href="/">LaserManager</a></h1>
+      </div>
+      

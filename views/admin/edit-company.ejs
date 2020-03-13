@@ -1,0 +1,12 @@
+<% var title = 'Edit Company' %>
+<% include ../head %>
+<div id="crumbs"><a href="admin">admin</a> > <a href="/admin/view-companies">view companies</a> > edit company</div>
+<form method="POST" action="edit-company" onsubmit="return validate()">
+    <input type="hidden" name="CompanyID" value="<%= CompanyID %>" />
+    <label for="company">Company</label>
+    <input type="text" id="company" autofocus name="Name" class="required" value="<%= Name %>">
+    <label for="enabled">Enabled</label>
+    <input type="checkbox" id="enabled" name="Enabled" <%= Enabled %> />
+    <input type="submit" value="Update Company">
+</form>
+<% include ../foot %>

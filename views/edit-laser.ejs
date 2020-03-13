@@ -1,0 +1,21 @@
+<% var title = 'Edit Laser' %>
+<% include head %>
+<div id="crumbs"><a href="/">home</a> > edit laser</div>
+<form method="POST" action="edit-laser" onsubmit="return validate()">
+    <input type="hidden" name="laserID" value="<%= laserID %>"/>
+    <table>
+        <tr>
+            <td><label for="name">Name</label></td>
+            <td><input id="name" type="text" name="name" autofocus class="required" value="<%= Name %>"></td>
+        </tr>
+        <tr>
+            <td><label for="voiceAnnouncements">Play Voice Announcements?</label></td>
+            <td><input id="voiceAnnouncements" type="checkbox" name="voiceAnnouncements" <%= Checked %>></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><input type="submit" value="Update Laser"></td>
+        </tr>
+    </table>
+</form>
+<% include foot %>

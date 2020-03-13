@@ -1,0 +1,37 @@
+<% var title = 'Users' %>
+<% include head %>
+<div id="table_div">
+</div>
+<script>
+
+    async function init() {
+
+        let url = `/table-laser-status2`;
+        await bindTable(url)
+
+
+        let statuses = document.getElementsByClassName("status")
+
+        Array.from(statuses).forEach((item) => {
+            sse(item);
+        })
+    }
+
+    init();
+
+    function sse(item) {
+
+        let id = item.id.replace("status", "");
+
+        let eventSource = new EventSource('/laser-status?laserId=' + id);
+
+        eventSource.addEventListener('message', function (e) {
+            item.innerText = e.data;
+        })
+
+    }
+
+
+
+</script>
+<% include foot %>
