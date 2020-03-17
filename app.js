@@ -31,6 +31,7 @@ const viewLasersRouter = require('./routes/view-lasers');
 const viewLaserStatusRouter = require('./routes/view-laser-status');
 const viewLaserStatusRouter2 = require('./routes/view-laser-status2');
 const viewIdleTime = require('./routes/view-idle-time');
+const viewJobTimes = require('./routes/view-job-times');
 const viewJobsRouter = require('./routes/view-jobs');
 const viewOperatorsRouter = require('./routes/view-operators');
 
@@ -40,7 +41,9 @@ const jobsTableApi = require('./api/table-jobs');
 const laserTableApi = require('./api/table-lasers');
 const laserStatusTableApi = require('./api/table-laser-status');
 const laserStatusTableApi2 = require('./api/table-laser-status2');
+const apiJobTime = require('./api/jobtime');
 const idleTimeTableApi = require('./api/table-idle-time');
+const jobTimeTableApi = require('./api/table-job-times');
 const userInfoApi = require('./api/userinfo');
 const companyListApi = require('./api/list-companies');
 const operatorTableApi = require('./api/table-operators');
@@ -75,6 +78,7 @@ app.use('/jobs', jobsListApi);
 app.use('/lasers', apiLasers);
 app.use('/laserstatus', apiLaserStatus);
 app.use('/laserstatus2', apiLaserStatus2);
+app.use('/jobtime', apiJobTime);
 app.use('/apitoken', apiTokenApi);
 app.use('/idletime', apiIdleTime);
 app.use('/playvoiceannouncements', apiPlayVoiceAnnouncements);
@@ -114,6 +118,7 @@ app.use('/view-lasers', viewLasersRouter);
 app.use('/view-laser-status', viewLaserStatusRouter);
 app.use('/view-laser-status2', viewLaserStatusRouter2);
 app.use('/view-idle-time', viewIdleTime);
+app.use('/view-job-times', viewJobTimes);
 app.use('/view-jobs', viewJobsRouter);
 app.use('/view-operators', viewOperatorsRouter);
 
@@ -125,6 +130,7 @@ app.use('/table-lasers', laserTableApi);
 app.use('/table-laser-status', laserStatusTableApi);
 app.use('/table-laser-status2', laserStatusTableApi2);
 app.use('/table-idle-time', idleTimeTableApi);
+app.use('/table-job-times', jobTimeTableApi);
 app.use('/table-operators', operatorTableApi);
 
 // catch 404 and forward to error handler

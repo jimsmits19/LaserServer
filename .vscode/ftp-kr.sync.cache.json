@@ -101,7 +101,7 @@
         "laserstatus2.js": {
           "type": "-",
           "size": 900,
-          "lmtime": 1583957149693,
+          "lmtime": 1584045196493,
           "modified": false
         },
         "list-companies.js": {
@@ -142,8 +142,8 @@
         },
         "table-laser-status2.js": {
           "type": "-",
-          "size": 322,
-          "lmtime": 1583953601104,
+          "size": 543,
+          "lmtime": 1584046391059,
           "modified": false
         },
         "table-lasers.js": {
@@ -173,8 +173,8 @@
       },
       "app.js": {
         "type": "-",
-        "size": 5186,
-        "lmtime": 1583959785686,
+        "size": 5292,
+        "lmtime": 1584040185820,
         "modified": false
       },
       "bin": {
@@ -260,6 +260,12 @@
           "lmtime": 1576523761470,
           "modified": false
         },
+        "IdleTimeModel.js": {
+          "type": "-",
+          "size": 808,
+          "lmtime": 1583958848695,
+          "modified": false
+        },
         "JobModel.js": {
           "type": "-",
           "size": 1792,
@@ -278,6 +284,12 @@
           "lmtime": 1576594995582,
           "modified": false
         },
+        "LaserStatusModel2.js": {
+          "type": "-",
+          "size": 2421,
+          "lmtime": 1584045426128,
+          "modified": false
+        },
         "OperatorModel.js": {
           "type": "-",
           "size": 1435,
@@ -288,18 +300,6 @@
           "type": "-",
           "size": 2806,
           "lmtime": 1576251052482,
-          "modified": false
-        },
-        "IdleTimeModel.js": {
-          "type": "-",
-          "size": 808,
-          "lmtime": 1583958848695,
-          "modified": false
-        },
-        "LaserStatusModel2.js": {
-          "type": "-",
-          "size": 1243,
-          "lmtime": 1583957092166,
           "modified": false
         }
       },
@@ -11195,6 +11195,12 @@
           "lmtime": 1576273825813,
           "modified": false
         },
+        "laser-status.js": {
+          "type": "-",
+          "size": 613,
+          "lmtime": 1584111321820,
+          "modified": false
+        },
         "login.js": {
           "type": "-",
           "size": 783,
@@ -11343,6 +11349,12 @@
           "lmtime": 1573752478646,
           "modified": false
         },
+        "view-idle-time.ejs": {
+          "type": "-",
+          "size": 276,
+          "lmtime": 1583959854482,
+          "modified": false
+        },
         "view-jobs.ejs": {
           "type": "-",
           "size": 199,
@@ -11353,6 +11365,12 @@
           "type": "-",
           "size": 305,
           "lmtime": 1574261204683,
+          "modified": false
+        },
+        "view-laser-status2.ejs": {
+          "type": "-",
+          "size": 689,
+          "lmtime": 1584111226911,
           "modified": false
         },
         "view-lasers.ejs": {
@@ -11366,19 +11384,13 @@
           "size": 214,
           "lmtime": 1574196929217,
           "modified": false
-        },
-        "view-idle-time.ejs": {
-          "type": "-",
-          "size": 276,
-          "lmtime": 1583959854482,
-          "modified": false
-        },
-        "view-laser-status2.ejs": {
-          "type": "-",
-          "size": 175,
-          "lmtime": 1583953521666,
-          "modified": false
         }
+      },
+      "README.md": {
+        "type": "-",
+        "size": 28,
+        "lmtime": 1584113097564,
+        "modified": false
       }
     },
     "ssl": {},
