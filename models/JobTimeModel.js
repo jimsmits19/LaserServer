@@ -16,7 +16,6 @@ class JobTimeModel {
 
     async create (jobName, laserId, jobBeginEnd, timestamp) {
         try {
-            isRunning = parseInt(isRunning);
             return jobTimeRepo.create(jobName, laserId, jobBeginEnd, timestamp);
         } catch (error) {
             throw error;

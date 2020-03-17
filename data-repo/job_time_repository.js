@@ -10,7 +10,7 @@ class JobTimeRepository {
             LaserID INT NOT NULL,
             JobName TEXT NOT NULL,
             JobBeginEnd TEXT NOT NULL,
-            Timestamp TIMESTAMP NULL,
+            Timestamp DATETIME NULL,
             PRIMARY KEY (JobTimeID)
         )`
         return this.dao.query(sql);
