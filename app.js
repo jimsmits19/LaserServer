@@ -36,6 +36,7 @@ const viewJobsRouter = require('./routes/view-jobs');
 const viewOperatorsRouter = require('./routes/view-operators');
 
 const usersTableApi = require('./api/table-users');
+const remoteLogApi = require('./api/remotelog');
 const companyTableApi = require('./api/table-companies');
 const jobsTableApi = require('./api/table-jobs');
 const laserTableApi = require('./api/table-lasers');
@@ -76,6 +77,7 @@ app.use('/login', loginRouter);
 app.use('/list-companies', companyListApi);
 app.use('/jobs', jobsListApi);
 app.use('/lasers', apiLasers);
+app.use('/remotelog', remoteLogApi);
 app.use('/laserstatus', apiLaserStatus);
 app.use('/laserstatus2', apiLaserStatus2);
 app.use('/jobtime', apiJobTime);

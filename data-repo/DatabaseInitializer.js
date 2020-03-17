@@ -8,6 +8,7 @@ const IdleTimeRepository = require('./idle_time_repository')
 const OperatorRepository = require('./operator_repository')
 const UserRepository = require('./user_repository')
 const JobTimeRepository = require('./job_time_repository')
+const RemoteLogRepository = require('./remote_log_repository')
 const dao = require('./dao');
 
 function initializeDatabase() {
@@ -21,6 +22,7 @@ function initializeDatabase() {
     const idleTimeRepo = new IdleTimeRepository(dao());
     const operatorRepo = new OperatorRepository(dao());
     const userRepo = new UserRepository(dao());
+    const remoteLogRepo = new RemoteLogRepository(dao());
     jobTimeRepo = new JobTimeRepository(dao());
 
     companyRepo.createTable().then(()=>{
@@ -28,6 +30,7 @@ function initializeDatabase() {
         operatorRepo.createTable();
         idleTimeRepo.createTable();
         jobTimeRepo.createTable();
+        remoteLogRepo.createTable();
         laserRepo.createTable().then(()=>{
             laserStatusRepo.createTable();
             laserStatusRepo2.createTable();
