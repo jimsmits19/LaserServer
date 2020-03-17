@@ -67,6 +67,12 @@
         "modified": false
       },
       ".well-known": {},
+      "README.md": {
+        "type": "-",
+        "size": 28,
+        "lmtime": 1584113097564,
+        "modified": false
+      },
       "api": {
         "apitoken.js": {
           "type": "-",
@@ -169,12 +175,24 @@
           "size": 434,
           "lmtime": 1576268817030,
           "modified": false
+        },
+        "jobtime.js": {
+          "type": "-",
+          "size": 1156,
+          "lmtime": 1584392434920,
+          "modified": false
+        },
+        "table-job-times.js": {
+          "type": "-",
+          "size": 324,
+          "lmtime": 1584450298671,
+          "modified": false
         }
       },
       "app.js": {
         "type": "-",
-        "size": 5292,
-        "lmtime": 1584040185820,
+        "size": 5573,
+        "lmtime": 1584450234416,
         "modified": false
       },
       "bin": {
@@ -188,8 +206,8 @@
       "data-repo": {
         "DatabaseInitializer.js": {
           "type": "-",
-          "size": 1585,
-          "lmtime": 1583958184003,
+          "size": 1730,
+          "lmtime": 1584391278629,
           "modified": false
         },
         "company_repository.js": {
@@ -200,8 +218,8 @@
         },
         "dao.js": {
           "type": "-",
-          "size": 1498,
-          "lmtime": 1584033887301,
+          "size": 2449,
+          "lmtime": 1584451506183,
           "modified": false
         },
         "idle_time_repository.js": {
@@ -214,6 +232,12 @@
           "type": "-",
           "size": 1988,
           "lmtime": 1576524561066,
+          "modified": false
+        },
+        "job_time_repository.js": {
+          "type": "-",
+          "size": 1626,
+          "lmtime": 1584450114209,
           "modified": false
         },
         "jobhistory_repository.js": {
@@ -270,6 +294,12 @@
           "type": "-",
           "size": 1792,
           "lmtime": 1576525574015,
+          "modified": false
+        },
+        "JobTimeModel.js": {
+          "type": "-",
+          "size": 1702,
+          "lmtime": 1584450075601,
           "modified": false
         },
         "LaserModel.js": {
@@ -11219,6 +11249,12 @@
           "lmtime": 1583959762348,
           "modified": false
         },
+        "view-job-times.js": {
+          "type": "-",
+          "size": 182,
+          "lmtime": 1584449937125,
+          "modified": false
+        },
         "view-jobs.js": {
           "type": "-",
           "size": 179,
@@ -11322,7 +11358,7 @@
         "foot.ejs": {
           "type": "-",
           "size": 316,
-          "lmtime": 1574176166738,
+          "lmtime": 1584046340096,
           "modified": false
         },
         "head.ejs": {
@@ -11355,6 +11391,12 @@
           "lmtime": 1583959854482,
           "modified": false
         },
+        "view-job-times.ejs": {
+          "type": "-",
+          "size": 289,
+          "lmtime": 1584449984741,
+          "modified": false
+        },
         "view-jobs.ejs": {
           "type": "-",
           "size": 199,
@@ -11385,12 +11427,6 @@
           "lmtime": 1574196929217,
           "modified": false
         }
-      },
-      "README.md": {
-        "type": "-",
-        "size": 28,
-        "lmtime": 1584113097564,
-        "modified": false
       }
     },
     "ssl": {},
