@@ -9,48 +9,15 @@ class JobTimeModel {
             JobID: dataObject.JobID,
             LaserID: dataObject.LaserID,
             JobName: dataObject.JobName,
-            IsRunning: dataObject.IsRunning,
-            RunTime: dataObject.RunTime
+            IsRunning: dataObject.JobBeginEnd,
+            RunTime: dataObject.Timestamp
         }
     }
 
-    async create (jobName, laserId, isRunning) {
+    async create (jobName, laserId, jobBeginEnd, timestamp) {
         try {
             isRunning = parseInt(isRunning);
-            return jobTimeRepo.create(jobName, laserId, isRunning);
-        } catch (error) {
-            throw error;
-        }
-    }
-
-    async getMaxId (jobName, laserId) {
-        try {
-            return jobTimeRepo.getMaxId(jobName, laserId);
-        } catch (error) {
-            throw error;
-        }
-    }
-
-    async update (job) {
-        try {
-            job.isRunning = parseInt(job.isRunning);
-            return jobTimeRepo.update(job);
-        } catch (error) {
-            throw error;
-        }
-    }
-
-    async select(jobId) {
-        try {
-            return jobTimeRepo.select(jobId);
-        } catch (error) {
-            throw error;
-        }
-    }
-
-    async count(laserId, jobName) {
-        try {
-            return jobTimeRepo.count(laserId, jobName);
+            return jobTimeRepo.create(jobName, laserId, jobBeginEnd, timestamp);
         } catch (error) {
             throw error;
         }
